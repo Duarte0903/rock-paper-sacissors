@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RPS</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Rock Paper Sizors</h1>
+    </div>
+
+    <div class="buttons-container">
+        <div class="button-container">
+            <div class="button-image">
+                <img src="imgs/stone.png" class="img">
+                <button type="button" id="rock" onclick="getUserPlay('rock')">Rock</button>
+            </div>
+
+            <div class="button-image">
+                <img src="imgs/paper.png" class="img">
+                <button type="button" id="paper" onclick="getUserPlay('paper')">Paper</button>
+            </div>     
+            
+            <div class="button-image">
+                <img src="imgs/scissors.png" class="img">
+                <button type="button" id="sizors" onclick="getUserPlay('scissors')">Scissors</button>
+            </div>
+        </div>
+
+        <div class="reload-button-container">
+            <button type="button" id="reload" onclick="playAgain()">Reset</button>
+        </div>
+    </div>
+
+    <div class="score-container">
+        <h1 id="userScore">User score: 0</h1>
+        <h1 id="botScore">Bot score: 0</h1>
+    </div>
+
+    <div class="result-container">
+        <h1 id="result"></h1>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

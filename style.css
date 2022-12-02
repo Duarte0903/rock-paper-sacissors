@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+html, body {
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Oswald';
+}
+
+button {
+    all: unset;
+    background-color: #2A324B;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 70px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: all .5s ease-in-out;
+    border-radius: 20px;
+}
+
+.button-image:hover {
+    transform: scale(1.05);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.img {
+    height: auto;
+    width: 130px;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-container {
+    text-align: center;
+}
